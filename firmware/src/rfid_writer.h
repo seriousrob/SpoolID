@@ -7,11 +7,11 @@
 namespace rfid {
 
 // XIAO ESP32-C3 <-> RC522 pin map (see project spec).
-constexpr int PIN_SS = 6;    // GPIO6 / D4
-constexpr int PIN_RST = 5;   // GPIO5 / D3
-constexpr int PIN_SCK = 21;  // GPIO21 / D6  (off strapping pin GPIO8)
-constexpr int PIN_MISO = 20; // GPIO20 / D7  (off strapping pin GPIO9)
-constexpr int PIN_MOSI = 10; // GPIO10 / D10
+constexpr int PIN_SS = 5;    // GPIO6 / D4
+constexpr int PIN_RST = 22;   // GPIO5 / D3
+constexpr int PIN_SCK = 18;  // GPIO21 / D6  (off strapping pin GPIO8)
+constexpr int PIN_MISO = 19; // GPIO20 / D7  (off strapping pin GPIO9)
+constexpr int PIN_MOSI = 23; // GPIO10 / D10
 
 struct WriteResult {
   bool done = false;       // a tag was processed since the last stage()
